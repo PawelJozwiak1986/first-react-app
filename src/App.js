@@ -3,6 +3,8 @@ import './App.css';
 // import Paragraph from './components/Paragraph'
 // import ReactLink from './components/ReactLink'
 import Bobr from './components/Bobr'
+import Comments from './components/Bobr'
+
 
 
 
@@ -16,6 +18,8 @@ class App extends Component {
         <header className="App-header">
           <button onClick={() => this.setState({ visibility: true })}>Bóbr</button>
           <button onClick={() => this.setState({ visibility: false })}>OdBóbr</button>
+          {/* <button onClick={() => this.setState({ visibility: false })}>Pokaz komentarze</button> */}
+
 
           {this.state.visibility && <Bobr />}
         </header>
@@ -38,6 +42,8 @@ export default App;
 // 1. ID autora
 // 2. Tytuł komentarza
 // 3. Treść
-// Mapując po danych źródłowych, uzyj nowo utworzonego komponentu, aby za jego pomocą wyświetlić w listę komentarzy.
-// Komentarze musza wyglądać, jak to zazwyczaj wyglądają komentarze. Czytelne, kazdy odseparowany od siebie,
+// Mapując po danych źródłowych, uzyj nowo utworzonego komponentu, 
+// aby za jego pomocą wyświetlić w listę komentarzy.
+// Komentarze musza wyglądać, jak to zazwyczaj wyglądają komentarze. 
+// Czytelne, kazdy odseparowany od siebie,
 //  tytuł cięzszy wizualnie itp. Uzyj CSS.
